@@ -1,0 +1,193 @@
+@media screen and (min-width:320px) and (max-width:767px){
+	html{
+		font-size: 14px;
+		overflow-x:hidden;
+	}
+
+	/*NAV CONTENT*/
+
+	.nav_options{
+		margin: auto;
+		visibility: hidden;
+		height: 0;
+	}
+
+	.nav_options li{
+		width: 100%;
+		margin: auto;
+	}
+
+
+	.nav_socials{
+		display: none;
+	}
+
+	.menu{
+		font-size: 1.42857143rem;
+		font-weight: 700;
+		color: white;
+		width: 100%;
+		padding: 20px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.show_menu{
+		height: 100%;
+		visibility:visible;
+		-webkit-transition: all 0.8s;
+		-moz-transition: all 0.8s;
+		-o-transition: all 0.8s;
+		transition: all 0.8s;
+	}
+
+	.menu img{
+		width: 20px;
+		height: 20px;
+		padding: 0;
+	}
+
+	/*WHO_CONTENT*/
+
+	.who_flex_container article{
+		width: 100%;
+	}
+
+	#title{
+		text-align: center;
+		font-size: 2.2rem;
+	}
+
+	#sub_title{
+		text-align: center;
+		font-size: 1.6rem;
+	}
+
+	.profile_photo{
+		order: -1;
+		padding:20px;
+	}
+
+	/*EXPERIENCE CONTENT*/
+
+	.jobs{
+		padding: 30px 20px;
+		margin: 10px;
+		max-width: 100%;
+		justify-content: space-around;
+	}
+
+	/*KNOWLEDGE CONENT*/
+	.look_experience{
+		z-index: 1;
+		position: absolute;
+		background-color: #000;
+		opacity: 0.8;
+		width: 240px;
+		height: 240px;
+		font-size: 2rem;
+		color: white;
+		text-align: center;
+		display: flex;
+		-webkit-transition: background-color, opacity 0.5s ease;
+		transition: background-color, opacity 0.5s ease;
+}
+
+	.look_experience p{
+		margin: auto;
+	}
+
+	/*FOOTER CONTENT*/
+
+	.footer_flex_content{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content:space-around;
+	}
+
+	.footer_flex_content ul{
+		width: 100%;
+	}
+
+	.footer_flex_content .footer_socials{
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content:center;
+		align-items: center;
+	}
+
+	.footer_flex_content .footer_socials li a img{
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	/*NAV CONTENT*/
+	nav{
+		max-width: 100%;
+		justify-content: space-around;
+	}
+	.nav_socials{
+		display: none;
+	}
+
+	.nav_options{
+		width: 100%;
+		font-size: 1.1rem;
+	}
+
+	/*WHO_CONTENT*/
+
+	.second_item{
+		order:-1;
+	}
+
+	.profile_photo{
+		padding: 20px 10px;
+	}
+
+	#title, #sub_title{
+		text-align: center;
+	}
+
+	.who_flex_container article{
+		width: 70%;
+	}
+
+	/*CONTACT CONTENT*/
+
+	.send_button{
+		width: 430px;
+	}
+
+
+	/*FOOTER CONTENT*/
+	.footer_flex_content{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content:space-around;
+	}
+
+
+	.footer_flex_content .footer_socials{
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content:center;
+		align-items: center;
+	}
+
+	.footer_flex_content .footer_socials li a img{
+		width: 30px;
+		height: 30px;
+		padding: 5px;
+	}
+
