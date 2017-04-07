@@ -1,21 +1,21 @@
 @font-face{
 	font-family: 'hp-simplified';
-	src: url('../font/hp-simplified-regular.otf');	
+	src: url('../font/hp-simplified-regular.otf');
 	font-weight: 400;
 }
 
 @font-face{
 	font-family: 'hp-simplified';
-	src: url('../font/hp-simplified-light.otf');	
+	src: url('../font/hp-simplified-light.otf');
 	font-weight: 200;
 }
 
 @font-face{
 	font-family: 'hp-simplified';
-	src: url('../font/hp-simplified-bold.otf');	
+	src: url('../font/hp-simplified-bold.otf');
 	font-weight: 700;
 }
-/*edicion general*/ 
+/*edicion general*/
 html{
 	font-size: 16px;
 }
@@ -143,6 +143,13 @@ nav{
 	font-weight: 200;
 	word-spacing: 0.125rem;
 	text-align: justify;
+	margin-bottom: 10px;
+	font-weight: 400;
+}
+
+.enlace{
+	text-decoration: none;
+	color: #ed9730;
 }
 
 .item_button{
@@ -235,7 +242,7 @@ nav{
 .jobs{
 	max-width: 240px;
 	text-align: center;
-	float: left; 
+	float: left;
 	margin: 20px 20px 20px 60px;
 }
 
@@ -494,7 +501,7 @@ nav{
 	margin: 30px 0px;
 	list-style: none;
 	color: white;
-	font-size: 16pt;	
+	font-size: 16pt;
 }
 .footer_flex_content ul li{
 	padding: 20px;
