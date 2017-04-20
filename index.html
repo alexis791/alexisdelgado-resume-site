@@ -4,6 +4,7 @@
 		<title>Alexis Delgado</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+		<link rel="icon" href="ad.ico">
 		<link href="css/normalize.css" type="text/css" rel="stylesheet">
 		<link href="css/style.css" type="text/css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet" type="text/css">
@@ -14,21 +15,21 @@
 				<nav>
 					<div class="menu" hidden><h3>MENU</h3><img src="images/mobile/menu.png"></div>
 					<ul class="nav_options">
-						<li><a href="#quien_soy">Quien soy</a></li>
-						<li><a class="current" href="#experiencias">Experiencia</a></li>
+						<li><a href="#who_content">Quien soy</a></li>
+						<li><a href="#experiencias">Experiencia</a></li>
 						<li><a href="#conocimientos">Conocimiento</a></li>
 						<li><a href="#contacto">Contacto</a></li>
 					</ul>
 					<ul class="nav_socials">
-						<li><a href="#"><img src="images/social/facebook_hover.png" alt="facebook"></a></li>
-						<li><a href="#"><img src="images/social/tweeter_hover.png" alt="tweeter"></a></li>
-						<li><a href="#"><img src="images/social/instagram_hover.png" alt="instagram"></a></li>
-						<li><a href="#"><img src="images/social/linked_hover.png" alt="linkedin"></a></li>
+						<li><a href="#" data-social="facebook"><img id="facebook" src="images/social/facebook_hover.png" alt="facebook"></a></li>
+						<li><a href="#" data-social="twitter"><img id="twitter" src="images/social/twitter_hover.png" alt="tweeter"></a></li>
+						<li><a href="#" data-social="instagram"><img id="instagram" src="images/social/instagram_hover.png" alt="instagram"></a></li>
+						<li><a href="#" data-social="linkedin"><img id="linkedin" src="images/social/linkedin_hover.png" alt="linkedin"></a></li>
 					</ul>
 				</nav>
 			<!-- </header> -->
 		</div>
-		<div class="who_content">
+		<div id="who_content" class="who_content">
 			<section class="who_flex_container">
 				<article>
 					<hgroup>
@@ -62,37 +63,61 @@
 					<img src="images/hlc.jpg">
 					<h2>HOBBY LA CUESTA</h2>
 					<div>
-						<p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-							 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-							 into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-							  passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						<p class="paragraph">
+							<a href="#" target="_blank" class="enlace">Hobby La Cuesta S.A. de C.V</a> pequeña empresa dedicada al comercio electrónico de radio control
+							(aviones, drones, helicópteros, refacciones). La pagina esta realizada por el administrador de contenido
+							<a href="#" target="_blank" class="enlace">OsCommerce</a>.
 						</p>
+						<h3>Actividades</h3>
+						<ul>
+							<li>Administrar y actualizar contenido de productos.</li>
+							<li>Desarrollar módulos administrativos (facturación, servicios etc..).</li>
+							<li>Mantener su la plataforma en su versión optima para una buena interacción al usuario.</li>
+							<li>Atención al cliente en caso de cualquier problema con el sitio.</li>
+						</ul>
 					</div>
-					<a href="#">Leer más..</a>
+					<a href="#" class="boton">Leer más..</a>
 				</article>
 				<article class="jobs">
 					<img src="images/rivka.png">
 					<h2>RIVKA</h2>
 					<div>
-						<p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-							 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-							 into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-							  passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						<p class="paragraph">
+							<a href="#" target="_blank" class="enlace">RIKVA Development<a/> es una empresa dedicada al desarrollo de software. Lugar donde realice mi estancia profesional
+							como desarrollador web. El cliente era Cambridge Weight Plan México, empresa dedicada a la venta de productos dietéticos,
+							 con un proyecto de automatización de registro de la FEM (Formato de Expediente Medico) y consulta de pacientes para ver su
+							 progreso en el plan que previamente el sistema le asignó.
 						</p>
+						<h3>Actividades</h3>
+						<ul>
+							<li>Registrar doctores e iniciar sesión.</li>
+							<li>Registrar a pacientes y llenar la FEM.</li>
+							<li>Asignar automáticamente el plan a seguir por el paciente.</li>
+							<li>Consultar a cada uno de sus pacientes para dar seguimiento.</li>
+						</ul>
 					</div>
-					<a href="#">Leer más..</a>
+					<a href="#" class="boton">Leer más..</a>
 				</article>
 				<article class="jobs">
 					<img src="images/csti.jpg">
 					<h2>CSTI</h2>
 					<div>
-						<p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-							 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-							 into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-							  passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						<p class="paragraph">
+							<a href="#" target="_blank" class="enlace">CSTI</a> (Centro de Servicios de Tecnológicos e Industriales) lugar donde realice mi servicio social.
+							Es una incubadora de proyectos internos y externos de la <a href="#" target="_blank" class="enlace">Universidad de Sonora</a> relacionados con las
+							tecnologías de la información. Su finalidad es ayudar a los estudiantes que decidan realizar su servicio
+							social, a desarrollar un proyecto junto con otros estudiantes para obtener experiencias previas en proyectos
+							 oficiales, antes de salir al mundo laboral. En mi caso se me asigno un proyecto para encuestas a las tribus O'doham.
 						</p>
+						<h3>Actividades</h3>
+						<ul>
+							<li>Análisis y diseño de base datos.</li>
+							<li>Análisis y diseño de interfaz de usuario.</li>
+							<li>Desarrollar pagina para capturar información sobre la encuesta.</li>
+							<li>Guardar, actualizar y eliminar información.</li>
+						</ul>
 					</div>
-					<a href="#">Leer más..</a>
+					<a href="#" class="boton">Leer más..</a>
 				</article>
 			</section>
 		</div>

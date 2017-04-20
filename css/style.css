@@ -26,6 +26,22 @@ body, h1, h2, h3, h4, h5, h6, p, ul{
 }
 
 /*NAV*/
+
+.nav-fixed{
+	opacity: 1;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	-moz-animation-name: navegador;
+	-moz-animation-duration: 1s;
+}
+
+@-moz-keyframes navegador {
+	0%{ height: 0px; opacity: 0;}
+	100%{ height: 62px; opacity: 1;}
+}
+
 .nav_content{
 	max-width: 100%;
 	background-color: #ed9730;
@@ -60,10 +76,10 @@ nav{
 	font-weight: 200;
 }
 
-.nav_options li a:hover{
+/*.nav_options li a:hover{
 	background-color: #eb8306;
 	transition: all 0.5s ease;
-}
+}*/
 
 .current{
 	background-color: #323030;
@@ -118,6 +134,14 @@ nav{
 .who_flex_container article{
 	width: 59.375%;
 	padding: 30px 20px;
+
+	-moz-animation-name: who_text;
+	-moz-animation-duration: 2s;
+}
+
+@keyframes who_text {
+0%{ opacity: 0;}
+100%{ opacity: 1;}
 }
 
 #title{
@@ -147,7 +171,7 @@ nav{
 	font-weight: 400;
 }
 
-.enlace{
+a.enlace{
 	text-decoration: none;
 	color: #ed9730;
 }
@@ -201,6 +225,7 @@ nav{
 	padding: 70px 20px;
 }
 
+
 .img_who{
 	width: 25px;
 	height: 25px;
@@ -250,7 +275,9 @@ nav{
 	width: 100px;
 	border-radius: 100%;
 	margin-bottom: 20px;
+	opacity: 0;
 }
+
 
 .jobs h2{
 	font-size: 1.25rem;
@@ -266,12 +293,30 @@ nav{
 	line-height: 1.125rem;
 }
 
+.jobs ul{
+	padding-left: 17px;
+}
+
+.jobs ul li{
+	font-size: 1.125rem;
+	color: black;
+	font-weight: 200;
+	text-align: left;
+	list-style: circle;
+}
+
 .jobs div{
-	max-height: 310px;
+	max-height: 100%;
+	height: 400px;
 	overflow: hidden;
 }
 
-.jobs a{
+.show_experience_info{
+	max-height: 100%;
+	height: 700px;
+}
+
+.boton{
 	font-size: 1rem;
 	color: white;
 	text-decoration: none;
@@ -284,7 +329,7 @@ nav{
 	padding-top: 10px;
 }
 
-.jobs a:hover{
+.boton:hover{
 	background-color: #eb8306;
 	transition: all 0.5s;
 }
