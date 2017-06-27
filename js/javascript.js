@@ -67,7 +67,7 @@ $(function(){
       $(this).html('Ocultar');
       elem.animate({height : '600px'},1000);
     } else {
-      $(this).html('>Leer más..');
+      $(this).html('Leer más..');
       elem.animate({height : '400px'},1000);
     }
   });
@@ -93,4 +93,36 @@ $(function(){
     $(this).attr('src','images/social/'+social+'_hover.png');
   });
 
+});
+
+$('#enviar_correo').submit(function(e){
+  e.preventDefault();
+  var data = $(this).serialize();
+  $.ajax({
+    type:'POST',
+    url:'correo.php',
+    data:data,
+    timeout:10000,
+    beforeSend:function(){
+      $('.form_message').html('<img src="images/loading.png" alt="loading">Enviando correo...');
+    },
+    success:function(data){
+      $('#enviar_correo')[0].reset();
+      $('.form_message').html(data);
+    },
+    fail:function(){
+      $('.form_message').html('Error al enviar el correo, intente de nuevo.');
+    }
+  });
+});
+
+//FUNCION PARA MOSTRAR EL MENU
+$('.menu').on('click',function(){
+  var nav = $(this).next();
+  var altura = nav.height();
+  if (altura == 0) {
+    nav.addClass('show_menu');
+  } else {
+    nav.removeClass('show_menu');
+  }
 });
